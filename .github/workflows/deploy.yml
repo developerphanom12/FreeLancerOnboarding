@@ -21,4 +21,4 @@ jobs:
 
     - name: Rsync Files
       run: |
-        rsync -avzr --delete -e "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no" ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/phanomprofes_usr/data/www/app.phanomprofessionals.com/freelanceronboarding/dist/
+        rsync -avzr --delete -e "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no" ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/phanomprofes_usr/data/www/freelancer.phanomprofessionals.com/freelanceronboarding/dist/
